@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Opensans";
+  src: url(fonts/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf);
+}
+@font-face {
+  font-family: "DMSerifDisplay";
+  src: url(fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+body {
+  display: grid;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+  margin: 0;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card {
+  height: 528px;
+  width: 360px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+.namesfont {
+  font-family: DMSerifDisplay;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #081f32;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  margin: 0px;
+}
+.desc1 {
+  font-family: Opensans;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #6e798c;
+  margin: 0;
+}
+.desc2 {
+  font-family: Opensans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #a5adbb;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+.price1 {
+  font-family: DMSerifDisplay;
+  font-size: 28px;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #081f32;
+}
+.price2 {
+  font-family: DM Serif Display;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  text-decoration-line: line-through;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f8593b;
+  font-weight: bold;
+}
+#price {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+#order {
+  display: flex;
+  width: 114px;
+  height: 44px;
+  background-color: #2ecc71;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Opensans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.18em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 4px;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  position: absolute;
+  top: 16px;
+  left: 304px;
+}
